@@ -71,12 +71,12 @@ void free_vector(Vector *vec);
 Insertions of 5000000 integers
 
 WITHOUT RESERVE
-Time taken (averagly)       0.053s
-Average time per insert     10.6ns/op
-Inserts per second          94338622
+Time taken (averagly)       0.035s
+Average time per insert     7ns/op
+Inserts per second          142857142
 
 WITH RESERVE 
-Time taken (averagly)       0.02s
-Average time per insert     4ns/op
-Inserts per second          250000000
+Time taken (averagly)       0.015s
+Average time per insert     3ns/op
+Inserts per second          333333333
 ````
