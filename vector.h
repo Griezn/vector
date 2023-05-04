@@ -55,8 +55,9 @@ inline __attribute__((always_inline)) void clear(Vector *vec){
     vec->size = 0;
 }
 
-inline __attribute__((always_inline)) void pop_back(Vector *vec){
-    free(&vec->data[vec->size - 1]) ;
+inline __attribute__((always_inline)) void *pop_back(Vector *vec){
+    vec->size--;
+    return &vec->data[vec->size];
 }
 
 inline __attribute__((always_inline)) void free_vector(Vector *vec){
